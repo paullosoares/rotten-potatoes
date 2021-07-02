@@ -46,15 +46,15 @@ jobs:
         uses: Azure/k8s-deploy@v1         
         with:
          manifests: | 
-          k8s/mongodb/deployment.yaml
-          k8s/mongodb/service.yaml          
+          k87/mongodb/deployment.yaml
+          k87/mongodb/service.yaml          
           
       - name: Deploy Web to Kubernetes cluster
         uses: Azure/k8s-deploy@v1         
         with:
          manifests: | 
-          k8s/web/deployment.yaml
-          k8s/web/service.yaml
+          k87/web/deployment.yaml
+          k87/web/service.yaml
          images: soaresph/rotten-potatoes:${{ github.run_number }}
         
   
